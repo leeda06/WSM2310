@@ -29,15 +29,15 @@ selector {
     selector:nth-child(n)   형제 유무중에서 n 순서에 있는 요소를 선택할 때 사용
     selector:hover          요소의 마우스가 올라가는 동안 selector를 선택
 
-    [속성 = "값"]       <TAG 속성 = "값">인 모든 요소 선택
+    [속성 = "값"]       <... 속성 = "값">인 모든 요소 선택
 </pre>
 
-    selector의 우선순위 
-    1.  !important
-    2.  #id
-    3.  .class
-    4.  TAG
-    5.  *
-    - 구체 > 포괄
-    -  같은 우선순위 일 때, 나중에 쓴것 적용
+selector의 우선순위 
+1.  !important
+2.  #id
+3.  .class
+4.  TAG
+5.  \*
+- 구체 > 포괄
+-  같은 우선순위 일 때, 나중에 쓴것 적용
 
