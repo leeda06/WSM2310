@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-color: beige;
 }
@@ -14,4 +15,29 @@ h1 + h2 {
 h1,
 h2 {
     background-color: plum;
+=======
+/*h1과 h2는 plum 배경색
+
+첫번째 h2만 plum 배경색
+
+h1의 자매인 모든 h2에 plum 배경색
+*/
+h1{
+    background-color: plum;
+}
+h2{
+    background-color: plum;
+}
+.kor {
+    color : skyblue ;
+}
+.jap {
+    color : crimson ;
+}
+#inchen {
+    color : darkblue ;
+}
+.leader{
+    color : purple;
+>>>>>>> 13cd67705fd217caff0912388cdbbfe90e9b1d46
 }
