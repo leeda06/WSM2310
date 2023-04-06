@@ -1,0 +1,67 @@
+
+body {
+    background-color: beige;
+}
+/* h1의 자매인 모든 h2에 plum 배경색 */
+h1 ~ h2 {
+    background-color: plum;
+}
+/* h1의 자매 중 첫번재 h2만 plum 배경색 */
+h1 + h2 {
+    background-color: plum;
+}
+
+/* h1과 h2는 plum 배경색 */
+h1,
+h2 {
+    background-color: plum;
+}
+/*h1과 h2는 plum 배경색
+
+첫번째 h2만 plum 배경색
+
+h1의 자매인 모든 h2에 plum 배경색
+*/
+ul {
+    color: #333;
+    font-size : 32px;
+}
+
+.kor {
+    color : skyblue;
+}
+
+.jap{
+    color : crimson
+}
+
+.incheon{
+    color : darkblue;
+}
+
+.leader {
+    color : purple;
+}
+
+li:nth-child(5) {
+    text-decoration : underline;
+}
+
+li:nth-child(even) {    /* even, 2n : 짝수행  ;  odd : 홀수행*/
+    background-color: #eee;
+}
+
+li:nth-child(5n){
+    background-color: #aaa;
+}
+
+[type = "text"] {
+    background-color: aqua;
+}
+
+ul:nth-child(3) > li:nth-child(2){
+    text-decoration: overline;
+}
+body > div:nth-child(8) > ul:nth-child(3) > li:nth-child(2){
+    font-size: 8px;
+}

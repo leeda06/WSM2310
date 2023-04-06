@@ -15,7 +15,7 @@ h1 + h2 {
 h1,
 h2 {
     background-color: plum;
-=======
+}
 /*h1과 h2는 plum 배경색
 
 첫번째 h2만 plum 배경색
@@ -39,5 +39,4 @@ h2{
 }
 .leader{
     color : purple;
->>>>>>> 13cd67705fd217caff0912388cdbbfe90e9b1d46
 }
