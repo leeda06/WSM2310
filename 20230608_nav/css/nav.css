@@ -27,7 +27,6 @@ body {
     font-size: var(--normal-font-size);
     color: #000;
 }
-
 header {
     background-color: var(--fist-color);
     position: fixed; /* 스크롤 해도 항상 위치 고정함 */
@@ -97,6 +96,7 @@ nav {
         background-color: rgba(239,177,28,0.4);
         backdrop-filter: blur(4px);
         height: 0;   /* 처음에 안보이게 */
+        transition: all 0.4s;
     }
 
     .nav-item {
