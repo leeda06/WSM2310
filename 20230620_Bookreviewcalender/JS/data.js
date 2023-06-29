@@ -80,3 +80,14 @@ let reviews = [
         "thoughts": "좋은 말. 지키기는 어려운",
     },
 ]
+
+let entertainer = ["아이유", "이석훈", "ZB1"]
+console.log(entertainer[2]);
+
+let person = {"group": "ZB1", "name": "장하오", "country" : "china"}
+console.log(person["name"]);
+console.log(person.name);
+
+console.log(books[3].author);
+
+const bookItems

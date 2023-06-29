@@ -31,8 +31,6 @@ nav_toggle.onclick = () => {
 //  const navToggleDiv = document.querySelectorAll(".nav-toggle")[0];
 //  const navToggleDiv = document.querySelectorAll(div)[0];
 
-
-// 여기서 부터 다시 공부
 // 5. Xpath
 //  nav_toggle.onclick = () => alert("안녕");
 //  nav_toggle.onclick = alert("안녕");
