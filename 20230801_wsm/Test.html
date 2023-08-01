@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <title>제목</title>
+
+    <style>
+        h1+h2 {
+            background-color: aqua;
+        }
+
+        h1~h3 {
+            background-color: antiquewhite;
+        }
+
+        h1,
+        h2 {
+            background-color: blue;
+        }
+
+        ul li {
+            color: rgb(255, 73, 73);
+            font-size: 22px;
+        }
+
+        ol li {
+            /*순서 있는*/
+            color: #333;
+            font-size: 32px;
+        }
+
+        .korea {
+            color: skyblue;
+        }
+
+        .japan {
+            color: crimson;
+        }
+
+        #incheon {
+            color: darkblue;
+        }
+
+        #leader {
+            color: purple;
+        }
+
+        li:nth-child(5) {
+            text-decoration: underline;
+        }
+
+        li:nth-child(even) {
+            background-color: #eee;
+        }
+
+        li:nth-child(5n) {
+            background-color: #aaa;
+        }
+
+        h5~h6 {
+            color: #333;
+            font-size: 32px;
+        }
+
+        [type="text"] {
+            background-color: aqua;
+        }
+
+        ul li:nth-child(2) {
+            text-decoration: overline;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <script>
+        const sayHello = () => {
+            console.log("Hello, World!");
+        };
+        sayHello();
+    </script>
+    <ul>
+        <li id="leader" class="korea">유진</li>
+        <li class="korea" id="incheon">가을</li>
+        <li class="japan">레이</li>
+        <li class="korea" style="color: violet">원영</li>
+        <li class="korea">리즈</li>
+        <li class="korea">이서</li>
+    </ul>
+    <ol>
+        <li id="leader" class="korea">유진</li>
+        <li class="korea" id="incheon">가을</li>
+        <li class="japan">레이</li>
+        <li class="korea" style="color: violet">원영</li>
+        <li class="korea">리즈</li>
+        <li class="korea">이서</li>
+    </ol>
+    <img src="https://i.discogs.com/Yn5oNR8TdpTxaRoSx_mZMyBGp_7JEjpE6NE0MGvgS3c/rs:fit/g:sm/q:90/h:400/w:600/czM6Ly9kaXNjb2dz/LWltYWdlcy9BLTcx/NjQ5NDEtMTU2MjU0/MTgyMy00MDk4Lmpw/ZWc.jpeg"
+        alt="TXT 오빠들">
+    <h1>Hello, World!!!</h1>
+    <h2>Hello, World!!!</h2>
+    <h2>Hello, World!!!</h2>
+    <h3>Hello, World!!!</h3>
+    <h4>Hello, World!!!</h4>
+    <h5>Hello, World!!!</h5>
+    <h6>Hello, World!!!</h6>
+    <input type="text">
+    <input type="password">
+    <a href="https://google.com">구글</a>
+</body>
+
+</html>
