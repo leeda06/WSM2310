@@ -34,6 +34,16 @@
 // console.log(`bookTitle: ${title}`);
 
 // 수업
+
+
+// const bookId = books[0].id;
+// console.log(`bookId : ${bookId}`);
+// const bookTitle = books[0].title;
+// console.log(`bookTitle : ${bookTitle}`);
+// const bookAuthor = books[0].author;
+// console.log(`bookAuthor : ${bookAuthor}`);
+
+
 // URL이 있는 book parameter 값(string) 
 let url_href = window.location.href;    //브라우저 창에 있는 주
 const bookId = new URL(url_href).searchParams.get("book");
@@ -57,20 +67,24 @@ for(let book of books) {
 }
 console.log(bookData);
 
-    
-//-> title, author, publisher, bookImage 알아내자
+
+// -> title, author, publisher, bookImage 알아내자
 let title = bookData.title;
 
 let author = bookData.author;
 let publisher = bookData.publisher;
-let bookImage = bookData.bookImage;
+let bookImage = bookData.img;
 console.log(title, author, publisher, bookImage);
 
-//-> HTML에 넣자
-//
-// const bookId = books[0].id;
-// console.log(`bookId : ${bookId}`);
-// const bookTitle = books[0].title;
-// console.log(`bookTitle : ${bookTitle}`);
-// const bookAuthor = books[0].author;
-// console.log(`bookAuthor : ${bookAuthor}`);
+// -> HTML에 넣자
+// HTML요소 => js 변수
+const titleDiv = document.getElementsByClassName("title")[1];   //  
+titleDiv.innerHTML = title;
+// titleDiv.innerHTML = `<u>${title}</u>`;
+const authorDiv = document.getElementsByClassName("author")[1];
+authorDiv.innerHTML = author;
+const publisherDiv = document.getElementsByClassName("publisher")[1];
+publisherDiv.innerHTML = publisher;
+
+const bookImageDiv = document.getElementsByClassName("book-image")[0];
+bookImageDiv.innerHTML = `<img src="${bookImage}"/>`;
