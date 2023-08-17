@@ -94,3 +94,14 @@ publisherDiv.innerHTML = publisher;
 
 const bookImageDiv = document.getElementsByClassName("book-image")[0];
 bookImageDiv.innerHTML = `<img src="${bookImage}"/>`;
+
+const readDataDiv = document.getElementsByClassName("read-date")[2];
+let now = "2030년 8월 17일";
+now = new Date();
+let year = now.getFullYear();
+let month = now.getMonth();
+let date = now.getDate();
+let dayList = ["일", "월", "화", "수", "목", "금", "토"];
+let day = now.getDay();
+
+readDataDiv.innerHTML = `${year}년 ${month + 1}월 ${date}일 ${dayList[day]}요일`;
