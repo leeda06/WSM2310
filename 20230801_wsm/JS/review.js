@@ -49,6 +49,12 @@ let url_href = window.location.href;    //브라우저 창에 있는 주
 const bookId = new URL(url_href).searchParams.get("book");
 console.log(`bookId: ${bookId}, type : ${typeof bookId}`);
 
+// bookId 이 null이면 index.html로 가는 코드
+if(bookId == null){
+    window.location.href = "index.html";
+    //window.open("index.html") -> 탭이 열림
+}
+
 //-> String 을 number로 변환:bookIdNumber 
 let bookIdNumber = parseInt(bookId);    //string->number
 // let bookIdNumber = Number(bookId);         //string->number
