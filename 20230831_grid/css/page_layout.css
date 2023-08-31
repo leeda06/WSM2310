@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container * {
+    border: 2px solid black;
+}
+
+figure > img {
+    width: 200px;
+    height: 100px;
+    object-fit: cover; /* 시험 contain; */
+}
+
+html {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 200px 3fr 1fr;
+    grid-template-rows: 44px 1fr 80px;
+    grid-template-areas: 
+    "header header header"
+    "side_left  main   side_right"
+    "footer footer footer";
+}
+
+.header{
+    background-color: burlywood;    
+    grid-area: header;
+}
+
+.side1{
+    background-color: bisque;
+    grid-area: side_left;
+}
+
+.side2{
+    background-color: sandybrown;
+    grid-area: side_right;
+
+}
+.main {
+    background-color: rgb(140, 58, 203);
+    grid-area: main;
+}
+
+
+.footer{
+    background-color: darkgoldenrod;
+    grid-area: footer;
+}
