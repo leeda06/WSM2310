@@ -38,10 +38,7 @@ main {
     display: grid;
     place-items: center;
 }
-.date.item:nth-child(1){
-    background-color: blue;
-    grid-column: 6/7;
-}
+
 /*오늘 포커싱*/
 .review.flex-container{
     display: flex;
