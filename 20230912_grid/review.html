@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Calendar - review </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/review.css">
+</head>
+<body>
+    <header>
+        <nav class="nav container">
+            <a href="" class="nav-logo">
+                <i class="bi bi-book"></i>
+            </a>
+
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html" class="nav-link">책장</a></li>
+                <li class="nav-item"><a href="review.html" class="nav-link">리뷰</a></li>
+                <li class="nav-item"><a href="calendar.html" class="nav-link">캘린더</a></li>
+            </ul>
+
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main id="review"> 
+        <div class="image-info-groups container">
+            <div class="book-image">
+                .book-image
+            </div>
+            <div class="info-groups container">
+                <div class="info-group container">
+                    <div class="info container">
+                        <div class="title label">
+                            제목
+                        </div>
+                        <div class="title">
+                            .title
+                        </div>
+                    </div>
+                    <div class="info container">
+                        <div class="author label">
+                            저자
+                        </div>
+                        <div class="author">
+                            .author
+                        </div>
+                    </div>
+                </div>
+                <div class="info-group container">
+                    <div class="info container">
+                        <div class="publisher label">
+                            출판사
+                        </div>
+                        <div class="publisher">
+                            .publisher
+                        </div>
+                    </div>
+                    <div class="info container">
+                        <div class="read-date label">
+                            <div class="read-date label">
+                                읽은날짜
+                            </div>
+                        </div>
+                        <div class="read-date">
+                            ,readDate
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews container">
+            <div class="review container">
+                <div class="synopsis label">
+                    줄거리
+                </div>
+                <div class="synopsis">
+                    <input type="text" placeholder="줄거리를 입력하세요">
+                </div>
+            </div>
+            <div class="review container">
+                <div class="phrase label">
+                    마음에 드는 구절
+                </div>
+                <div class="phrase">
+                    <input type="text" placeholder="마음에 드는 구절을 입력하세요">
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js/nav.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/review.js"></script>
+</body>
+</html>
