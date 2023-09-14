@@ -48,6 +48,13 @@ main {
     border-radius: 10px;
     padding: 10px;
 }
+
+.bi-caret-left-fill:hover,
+.bi-caret-right-fill:hover,
+.month:hover{
+    cursor: pointer;
+}   
+
 /* main *{
     border: 2px solid black;
 } */
