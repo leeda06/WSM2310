@@ -1,0 +1,27 @@
+.bookshelf{
+    margin-top: calc(44px + 100px); /* 연산자를 띄워 사용해야 한다*/
+    display: flex;  /* 수평배열 */
+    gap: 80px;  /*column-gap: 80px; row-gap:80px; */
+    flex-wrap: wrap;    /* 길면 내려쓰기 */
+    justify-content: center;    /* 메인 축 (수평) 가운데로 */
+    max-width: calc(150px * 4 + 80px * 3);  /* 한줄에 최대 2개의 row-container, 4개의 book-item*/
+    margin-left: auto;      /*좁아진 bookshelf 자체를 가운데로*/
+    margin-right: auto;     /*좁아진 bookshelf 자체를 가운데로*/
+}
+
+.row-container {
+    display: flex;  /* 수평배열 */
+    column-gap: 80px; /* gap: 80px; */
+    align-items: flex-end;  /* 교차축 밑에 정렬하자 */
+}
+
+.book-item img {
+    width: 150px;
+    box-shadow: 0px 16px 32px #ddd;
+    transition: all 0.2s; /* 중간단계를 넣음 */
+}
+
+.book-item img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 24px 40px #e1e1e1;
+}
